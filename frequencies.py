@@ -1,7 +1,13 @@
 """Frequencies function."""
 """ENTER YOUR SOLUTION HERE!"""
+from collections import Counter
+
 
 def frequencies(items):
-    frequencies = {}
     # Your code goes here
-    return frequencies
+    itemsToString = map(str, items)
+    return dict(Counter(itemsToString))
+
+
+
+
